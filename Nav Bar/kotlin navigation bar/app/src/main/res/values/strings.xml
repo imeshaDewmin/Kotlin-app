@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Navigation bar</string>
+    <string name="open">int</string>
+    <string name="close">int</string>
+</resources>
