@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BeveragelistActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_menu_24"
+            android:text="Cafe  Da  Vibe"
+            android:textAlignment="center"
+            android:textColor="#6B3DA6"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <SearchView
+            android:id="@+id/search_box"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heading"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#F2EEEE"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search Food..."/>
+
+        <TextView
+            android:id="@+id/heading2"
+            android:layout_width="200dp"
+            android:layout_marginTop="18dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/search_box"
+            android:layout_marginLeft="100dp"
+            android:text="Beverage List"
+            android:textColor="#0A0A0A"
+            android:textAlignment="center"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/Relay1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/heading2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="#9B86AC"
+            android:padding="15dp"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="245dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="60dp"
+                android:src="@drawable/cocacola"
+                android:background="#9B86AC" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@id/imageView1"
+                android:text="Coca Cola"
+                android:textColor="#0A0A0A"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:layout_toRightOf="@id/imageView1"
+                android:text="1 Bottle"
+                android:textColor="#0A0A0A"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text2"
+                android:layout_toRightOf="@id/imageView1"
+                android:text="100 LKR"
+                android:textColor="#0A0A0A"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/add13"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#C1C1C1"
+                android:text="Add"
+                android:textColor="#000000"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Relay2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/Relay1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="#9B86AC"
+            android:padding="15dp"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="245dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="60dp"
+                android:src="@drawable/pepsicola"
+                android:background="#9B86AC" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@id/imageView2"
+                android:text="Pepsi Cola"
+                android:textColor="#0A0A0A"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text4"
+                android:layout_toRightOf="@id/imageView2"
+                android:text="1 Glass"
+                android:textColor="#0A0A0A"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text5"
+                android:layout_toRightOf="@id/imageView2"
+                android:text="120 LKR"
+                android:textColor="#0A0A0A"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/add14"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#C1C1C1"
+                android:text="Add"
+                android:textColor="#000000"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Relay3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/Relay2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="#9B86AC"
+            android:padding="15dp"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="245dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="60dp"
+                android:src="@drawable/sevenup"
+                android:background="#9B86AC" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@id/imageView3"
+                android:text="7 Up"
+                android:textColor="#0A0A0A"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text7"
+                android:layout_toRightOf="@id/imageView3"
+                android:text="1 Bottle"
+                android:textColor="#0A0A0A"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text8"
+                android:layout_toRightOf="@id/imageView3"
+                android:text="70 LKR"
+                android:textColor="#0A0A0A"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/add15"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#C1C1C1"
+                android:text="Add"
+                android:textColor="#000000"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Relay4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/Relay3"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="#9B86AC"
+            android:padding="15dp"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="245dp">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="60dp"
+                android:src="@drawable/redbull"
+                android:background="#9B86AC" />
+
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@id/imageView4"
+                android:text="Red Bull"
+                android:textColor="#0A0A0A"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text10"
+                android:layout_toRightOf="@id/imageView4"
+                android:text="1 Can"
+                android:textColor="#0A0A0A"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text11"
+                android:layout_toRightOf="@id/imageView4"
+                android:text="350 LKR"
+                android:textColor="#0A0A0A"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/add16"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#C1C1C1"
+                android:text="Add"
+                android:textColor="#000000"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
